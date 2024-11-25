@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input Name -->
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên"
+        android:inputType="textPersonName"
+        android:padding="12dp" />
+
+    <!-- Input Height -->
+    <EditText
+        android:id="@+id/edtHeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Chiều cao (m)"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp"
+        android:padding="12dp" />
+
+    <!-- Input Weight -->
+    <EditText
+        android:id="@+id/edtWeight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cân nặng (kg)"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="8dp"
+        android:padding="12dp" />
+
+    <!-- Calculate Button -->
+    <Button
+        android:id="@+id/btnCalculateBMI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tính BMI"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <!-- BMI Result -->
+    <TextView
+        android:id="@+id/tvBMIResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BMI: "
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <!-- BMI Diagnosis -->
+    <TextView
+        android:id="@+id/tvBMIDiagnosis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chẩn đoán: "
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

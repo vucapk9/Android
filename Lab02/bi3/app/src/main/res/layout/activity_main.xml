@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input A -->
+    <EditText
+        android:id="@+id/edtNumberA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số A"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Input B -->
+    <EditText
+        android:id="@+id/edtNumberB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số B"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Buttons for Operations -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Cộng"
+            android:layout_marginEnd="8dp"
+            android:minWidth="72dp" />
+
+        <Button
+            android:id="@+id/btnSubtract"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Trừ"
+            android:layout_marginEnd="8dp"
+            android:minWidth="72dp" />
+
+        <Button
+            android:id="@+id/btnMultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Nhân"
+            android:layout_marginEnd="8dp"
+            android:minWidth="72dp" />
+
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Chia"
+            android:minWidth="72dp" />
+    </LinearLayout>
+
+    <!-- Result -->
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kết quả: "
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+</LinearLayout>
